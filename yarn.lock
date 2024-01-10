@@ -459,6 +459,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.19.11.tgz#a5d300008960bb39677c46bf16f53ec70d8dee04"
   integrity sha512-vfkhltrjCAb603XaFhqhAF4LGDi2M4OrCRrFusyQ+iTLQ/o60QQXxc9cZC/FFpihBI9N1Grn6SMKVJ4KP7Fuiw==
 
+"@fontsource/league-spartan@^5.0.18":
+  version "5.0.18"
+  resolved "https://registry.yarnpkg.com/@fontsource/league-spartan/-/league-spartan-5.0.18.tgz#9dc7c5a0ca771bf421a8c506bff3b03f5a9b7bd1"
+  integrity sha512-+4OP0NTDDTcicDp0IA+nNd5qtmZXUIuiqeSXqe9CZS5loN7Rcs14neAvL19sZDCa1EALcv+SuQe7i8tA0l+n1Q==
+
 "@img/sharp-darwin-arm64@0.33.1":
   version "0.33.1"
   resolved "https://registry.yarnpkg.com/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.33.1.tgz#9d3cb0e4899b10b003608a018877b45b6db02861"

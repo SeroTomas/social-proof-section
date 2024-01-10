@@ -1,0 +1,22 @@
+---
+import RatedCard from "./RatedCard.astro";
+
+const ratings = [
+  {
+    stars: [1, 2, 3, 4, 5],
+    reviewer: "Reviews",
+  },
+  {
+    stars: [1, 2, 3, 4, 5],
+    reviewer: "Report Guru",
+  },
+  {
+    stars: [1, 2, 3, 4, 5],
+    reviewer: "BestTech",
+  },
+];
+---
+
+<div class="flex flex-col gap-4 flex-grow 2xl:items-center 2xl:justify-center">
+  {ratings.map((rating) => <RatedCard {...rating} />)}
+</div>

@@ -1,0 +1,17 @@
+---
+interface Props {
+  stars: number[];
+  reviewer: string;
+}
+
+const { stars, reviewer } = Astro.props;
+---
+
+<div class="flex flex-col items-center gap-3 p-3 bg-c-darkMagenta bg-opacity-10 rounded-lg 2xl:flex-row 2xl:px-8 2xl:py-4 2xl:gap-10 2xl:w-3/4 2xl:first:self-start 2xl:last:self-end ">
+  <div class="flex gap-2">
+    {stars.map((star) => <img src="images/icon-star.svg" />)}
+  </div>
+  <span class="text-c-darkMagenta font-bold 2xl:translate-y-[2px] 2xl:text-lg ">
+    {`Rated ${stars.length} Stars in ${reviewer}`}
+  </span>
+</div>

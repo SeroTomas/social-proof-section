@@ -1,0 +1,23 @@
+---
+interface Props {
+  avatar: string;
+  name: string;
+  type: string;
+  text: string;
+}
+
+const { avatar, name, text, type } = Astro.props;
+---
+
+<div class=" bg-c-darkMagenta p-8 rounded-lg text-white h-fit 2xl:first:self-start 2xl:last:self-end">
+  <div class="flex gap-4 mb-8 items-center">
+    <img src={avatar} class="h-11 rounded-full 2xl:h-12"/>
+    <div class="flex flex-col 2xl:text-lg">
+      <span class="font-medium">{name}</span>
+      <span class="text-c-softPink opacity-75">{type}</span>
+    </div>
+  </div>
+  <p class="tracking-wide 2xl:text-lg">
+    {text}
+  </p>
+</div>

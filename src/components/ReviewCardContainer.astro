@@ -1,0 +1,29 @@
+---
+import ReviewCard from "./ReviewCard.astro";
+
+const reviews = [
+  {
+    avatar: "images/image-colton.jpg",
+    name: "Colton Smith",
+    type: "Verified Buyer",
+    text: `" We neede the same printed design as the one we had ordered a week prior. Nor only did they find the original order, but we also received it in time. Excellent! "`,
+  },
+  {
+    avatar: "images/image-irene.jpg",
+    name: "Irene Roberts",
+    type: "Verified Buyer",
+    text: `" Customer service is always excellent and very quick turn around.
+    Completely delighted with the simplicity of the purchase and the speed of delivery. "`,
+  },
+  {
+    avatar: "images/image-anne.jpg",
+    name: "Anne Wallace",
+    type: "Verified Buyer",
+    text: `" Put an order with this company and only praise them for the very high standard. Will definitely use them again and recommend them to everyone! "`,
+  },
+];
+---
+
+<div class="flex flex-col gap-4 2xl:flex-row 2xl:h-[320px] 2xl:items-center">
+  {reviews.map((review) => <ReviewCard {...review} />)}
+</div>
